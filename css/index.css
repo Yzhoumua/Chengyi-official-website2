@@ -1,0 +1,631 @@
+.box{
+    width: 1200px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.lf{
+    float: left;
+}
+.rg{
+    float: right;
+}
+.clearFix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.mar{
+    margin: 0 auto;
+}
+.position{
+    position: relative;
+}
+.active{background: #ffb200;}
+.active1{ background: #f50254;}
+
+.top{background-color: #f2f2f2;line-height: 25px;box-sizing: border-box;border-bottom: 1px solid #ccc;font-size: 12px;height: 26px;}
+.top .topbox .lf{margin-left: 25px;}
+.top .topbox .rg{color: #ccc;}
+.top .topbox .rg li{display: inline-block;}
+.top .topbox .rg li a{vertical-align: -1px;color: #000;}
+
+.toplogo{height: 90px;padding: 10px 20px;box-sizing: border-box;border-left: #ccc 2px solid;border-right: #ccc 2px solid;}
+.toplogo .rg img{width:70px; height: 70px;vertical-align: -25px;display: inline-block;padding-right: 20px;}
+.toplogo .rg{color: #fd0100;font-size: 25px;font-weight: bold;}
+
+
+.nav ul li{
+    display: block;
+    float: left;
+    border-right: 1px #ccc solid;
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #2390e3;
+    text-align: center;
+    transition: 0.5s;
+}
+.nav ul li:hover{
+    background: #ffb200;
+}
+.nav ul li a{
+    display: block;
+    color: #fff;
+}
+
+.banner{
+    height: 360px;
+    padding-top: 10px;
+    border-right: 2px #ccc solid;
+    border-left: 2px #ccc solid;
+    box-sizing: border-box;
+}
+.banner .anlf,.banner .anrg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin:auto 0;
+    width: 60px;
+    height: 80px;
+   background: #7878789a;
+   z-index: 2;
+   cursor: pointer;
+}
+.banner .anlf{
+    left: 0;
+}
+.banner .anrg{
+    right: -2px;
+}
+.banner .anlf img,.banner .anrg img{
+    width: 45px;
+    height:45px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.banner .bannerbox{
+    width: 1198px;
+    height: 350px;
+    background-image: url(../images/banner.jpg);
+    background-size: 200%;
+    background-position: -600px -20px;
+}
+.banner .an{
+    position: absolute;
+    width: 1198px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.527);
+    bottom: 0;
+}
+.banner .an ul{
+    width: 240px;
+    position: absolute;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 10px;
+}
+.banner .an ul li{
+    margin: 0 5px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #f9f9f7;
+}
+.banner .an ul li a{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.banner .an ul li:hover{
+    background: #f50254;
+}
+
+
+.contbox{
+    box-sizing: border-box;
+    border-right: 2px #ccc solid;
+    border-left: 2px #ccc solid;
+    padding: 30px 10px;
+}
+.contbox .contnva ul{
+    color: #000;
+    font-size: 12px;
+    background: #f7f7f7;
+    height: 51px;
+    line-height: 50px;
+
+}
+
+.contbox .contnva ul li{
+    display: block;
+    float: left;
+}
+.contbox .contnva ul li:nth-child(1){
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(235, 232, 232);
+    
+    border-right: 1px #ccc solid;
+}
+.contbox .contnva ul li:nth-child(1) a{
+    color: #fbbe6e;
+    
+
+}
+.contbox .contnva ul li:nth-child(12){
+    background: rgb(235, 232, 232);
+    float: right;
+    width:120px;
+    text-align: center;
+    font-size:14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-left: 1px #ccc solid;
+}
+.contbox .contnva ul li:nth-child(12) a{
+    box-sizing: border-box;
+    padding: 5px 30px;
+    background: #fbbe6e;
+    color: #fff;
+    
+}
+.contbox .contnva ul li a{
+    color: #000;
+    padding: 0 10px;
+   vertical-align: -1px;
+}
+.contbox .contnva{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+.contbox .zyfl{
+    padding-top: 10px;
+}
+.contbox .zyfl .zyfllf{
+    width: 250px;
+    height: 350px;
+    background: #f7f7f7
+}
+.contbox .zyfl .zyfllf h1{
+ color: #fff;
+ background:#fbbe6e;
+ font-size: 20px; 
+ box-sizing: border-box;
+ padding: 10px 0 10px 10px;
+}
+.contbox .zyfl .zyfllf ul li{
+    box-sizing: border-box;
+    padding-left: 10px;
+    width: 230px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    line-height: 35px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.contbox .zyfl .zyfllf ul li::before{
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #fbbe6e;
+    border-radius: 50%;
+    vertical-align: 2px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.contbox .zyfl .zyfllf ul li:hover{
+    color: #fff;
+    background: #fbbe6e;
+}
+.contbox .zyfl .zyfllf ul li:hover::before{
+    background: #fff;
+}
+
+
+
+.contbox .zyfl .zyflrg{
+    width: 900px;
+    height: 350px;
+    background: #f7f7f7
+}
+
+.contbox .zyfl .zyflrg .rgtop{
+    line-height: 26px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+}
+.contbox .zyfl .zyflrg .rgtop .lf{
+    height: 46px;
+    box-sizing: border-box;
+    color: #fff;
+    background:#fbbe6e;
+    padding: 10px 0 10px 10px;
+     font-size: 20px;
+     font-weight: bold;
+     width: 120px;
+     cursor: pointer;
+}
+.contbox .zyfl .zyflrg .rgtop .rg{
+    width: 70px;
+    height: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(122, 122, 122);
+    margin: 10px 30px 0 0 ;
+    cursor: pointer;
+}
+
+.contbox .zyfl .zyflrg .xwbox .lf{
+    width: 260px;
+    height: 300px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+.contbox .zyfl .zyflrg .xwbox .lf img{
+    width: 260px;
+    height:200px;
+    display: block;
+    box-sizing: border-box;
+    border: 2px #ccc solid;
+    transition: 0.5s;
+   
+}
+.contbox .zyfl .zyflrg .xwbox .lf img:hover{
+    border: 2px solid red;
+}
+.contbox .zyfl .zyflrg .xwbox .lf p{
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 10px;
+
+}
+.contbox .zyfl .zyflrg .xwbox span{
+    margin-top: 10px;
+    display:inline-block;
+    padding: 5px 10px;
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    background: #d6d4d4;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.contbox .zyfl .zyflrg .xwbox .textred{
+    color: red;
+}
+.contbox .tpzs{
+    margin-top: 20px;
+    height: 200px;
+    border: 10px #fbbe6e solid;
+    box-sizing: border-box;
+}
+.contbox .tpzs h1{
+    font-size:24px;
+    color: #fff;
+    background: #fbbe6e;
+    width:20px;
+    height:160px;
+     padding:20px 45px 0 40px
+}
+.contbox .tpzs .tu{
+    width: 190px;
+    height:160px;
+    margin: 10px 0;
+    margin-left: 17px;
+    cursor: pointer;
+}
+.contbox .tpzs .tu img{
+    width: 190px;
+    height: 160px;
+    display: block;
+}
+.contbox .tpzs .tu span{
+    width: 190px;
+    height: 30px;
+    display: block;
+    background: rgba(0, 0, 0, 0.466);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.contbox .xyjjbox{
+    margin-top: 20px;
+}
+.contbox .xyjjbox .xyjjlf{
+    width: 700px;
+    height: 400px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    font-size: 14px;
+}
+.contbox .xyjjbox .xyjjlf .xyjs{
+    margin-bottom: 10px;
+}
+.contbox .xyjjbox .xyjjlf .xyjs img{
+    width: 300px;
+    display: block;
+    height: 250px;
+    box-sizing: border-box;
+    border: 5px solid #ccc;
+}
+.contbox .xyjjbox .xyjjlf .xyjs p{
+    width: 360px;
+    text-indent: 2em;
+    margin-left: 10px;
+}
+.contbox .xyjjbox .xyjjlf h1{
+    border-bottom: 1px solid #ccc;
+    color: rgb(158, 157, 157);
+    padding-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.contbox .xyjjbox .xyjjlf .jstext{
+    margin-top: 15px;
+    text-indent: 2em;
+    
+}
+.contbox .xyjjbox .xyjjlf .jstext a{
+    color: red;
+}
+.contbox .xyjjbox .xyjjrg{
+    width: 450px;
+    height: 400px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+}
+.contbox .xyjjbox .xyjjrg h1{
+    border-bottom: 1px solid #ccc;
+    color: rgb(158, 157, 157);
+    padding-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.contbox .xyjjbox .xyjjrg .question{
+    width: 430px;
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.contbox .xyjjbox .xyjjrg .question .wenlf{
+    width: 20px;
+    height: 50px;
+    
+    padding-left: 15px;
+    transition: 0.5s;
+}
+.contbox .xyjjbox .xyjjrg .question .wenlf span:nth-child(1){
+    color: #fff;
+    background: #fbbe6e;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding:5px 10px
+}
+.contbox .xyjjbox .xyjjrg .question .wenlf span:nth-child(2){
+    display: inline-block;
+    color: #fff;
+    background: #f50254;
+    padding:5px 10px
+}
+.contbox .xyjjbox .xyjjrg .question .wenrg{
+    width: 360px;
+    height: 140px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+.contbox .xyjjbox .xyjjrg .question .wenrg p:nth-child(1){
+    font-weight: bold;
+}
+.contbox .xyjjbox .xyjjrg .question .wenrg p:nth-child(2){
+    margin-top: 10px;
+    text-indent: 2em;
+}
+.contbox .xyjjbox .xyjjrg .question:hover .wenrg{
+    transform: scale(1.1);
+}
+
+
+.contbox .xxdt{
+    margin-top: 20px;
+    height:350px;
+    box-sizing: border-box;
+}
+.contbox .xxdt .dt{
+    width: 360px;
+    height:330px;
+    background: #f2f2f2;
+    margin-right:48px;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+}
+.contbox .xxdt .dt:nth-child(3){
+    margin-right: 0;
+}
+.contbox .xxdt .dt h1{
+    font-size: 16px;
+    color: #fff;
+    background:#fbbe6e;
+    padding: 10px;
+}
+.contbox .xxdt .dt h1::after{
+    position: absolute;
+    content: "";
+    display: block;
+    bottom:-8px;
+    left:70px;
+    border-left: 20px solid #f5025300;
+    border-right: 0px solid #f50254;
+    border-top: 0px solid #f50254;
+    border-bottom: 20px solid #fbbe6e;
+    transform:rotate(45deg)
+}
+.contbox .xxdt .dt .more{
+    margin-top: 16px;
+    margin-right: 10px;
+    width: 60px;
+    height: 20px;
+    border-radius: 10px;
+    background: #ccc;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.contbox .xxdt .dt .imgjs{
+    margin-top: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.contbox .xxdt .imgjs img{
+    display: block;
+    width:180px;
+    height: 130px;
+}
+.contbox .xxdt .imgjs .rg{
+    width: 150px;
+    height: 130px;
+    font-size: 12px;
+}
+.contbox .xxdt .imgjs .rg p:nth-child(1){
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+}
+.contbox .xxdt .imgjs .rg p:nth-child(2){
+    text-indent: 2em;
+    margin-top: 10px;
+}
+.contbox .xxdt .dt ul li{
+    font-size: 12px;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 5px;
+    margin: 0 10px;
+    margin-top:15px;
+}
+.contbox .xxdt .dt ul li a{
+    color: #000;
+}
+.contbox .xxdt .dt ul li span{
+    float: right;
+}
+.contbox .xxdt .dt ul li::before{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background:#fbbe6e ;
+    content: "";
+    display: inline-block;
+    vertical-align: 1px;
+    margin-right: 10px;
+}
+.contbox .xxdt .dt .input1{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(102, 97, 97);
+}
+.contbox .xxdt .dt .input1 span{
+    color: red;
+}
+.contbox .xxdt .dt .input2{
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.contbox .xxdt .dt .input2 span:nth-child(3){
+    color: red;
+    padding-left: 10px;
+}
+.contbox .xxdt .dt .input2 input{
+    width: 200px;
+    height: 20px;
+}
+.contbox .xxdt .dt .input3 textarea{
+    height: 70px;
+    vertical-align: -59px;
+}
+.contbox .xxdt .dt .input3,.contbox .xxdt .dt .input4{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.contbox .friends h1{
+    color: #000;
+    background: rgb(156, 154, 154);
+    font-size: 20px;
+    padding: 15px 0 15px 15px;
+}
+.contbox .friends ul{
+    padding: 10px 0;
+    display: block;
+   width: 1176px;
+   background: rgb(196, 194, 194);
+}
+.contbox .friends ul li{
+    float: left;
+    font-size: 12px;
+    color:rgb(99, 95, 95)
+}
+.contbox .friends ul li a{
+    padding: 0 10px;
+    color:rgb(99, 95, 95)
+}
+.contbox footer{
+    padding-top:20px;
+}
+.contbox footer a{
+    margin-left: 10px;
+}
+.contbox footer .foottext{
+    margin-left: 30px;
+    font-size: 12px;
+}
+.contbox footer .foottext p{
+    margin-bottom: 10px;
+}
+.contbox footer .rg img{
+    width: 70px;
+}
+.contbox footer .rg{
+    margin-right: 10px;
+}
